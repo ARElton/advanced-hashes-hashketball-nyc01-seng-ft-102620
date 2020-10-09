@@ -131,11 +131,11 @@ end
 #####################################################################
 
 
-def num_points_scored(player)
-  player_helper.each do |players|
-    players.each do |inner_key, inner_value|
-      if inner_value == player
-        return player_helper[player][:points]
+def num_points_scored(search_player)
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |player|
+      if player[:player_name] == search_player
+        return player[:points]
       end
     end
   end
