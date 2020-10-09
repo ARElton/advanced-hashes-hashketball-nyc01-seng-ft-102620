@@ -138,7 +138,7 @@ def num_points_scored(player)
   player_helper.each do |players|
     players.each do |inner_key, inner_value|
       if inner_value == player
-        return player_helper[:points]
+        return player_helper[player][:points]
       end
     end
   end
