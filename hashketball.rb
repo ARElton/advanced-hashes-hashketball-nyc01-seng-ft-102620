@@ -188,4 +188,6 @@ def player_stats(search_player)
       end
     end
   end
+  
+binding.pry
 end
