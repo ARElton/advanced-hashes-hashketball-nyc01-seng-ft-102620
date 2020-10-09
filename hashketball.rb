@@ -152,4 +152,3 @@ def shoe_size(search_player)
   end
 end
 
-end
