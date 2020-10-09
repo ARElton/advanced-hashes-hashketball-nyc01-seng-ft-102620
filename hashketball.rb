@@ -165,11 +165,19 @@ def team_names
 end
 
 def player_numbers(search_team)
+  numbers = []
   game_hash.each do |team, team_info|
-    if team == search_team
-      return [:number]
+    if team_info[:team_name] == search_team
+      team_info.each do |key, value|
+        if key == :players
+          value.each do |player|
+            numbers.push(player[:number])
+          end
+        end
+      end
     end
   end
+  return numbers 
 end
 
 binding.pry
