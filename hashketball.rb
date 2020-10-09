@@ -161,7 +161,7 @@ def team_colors(search_team)
 end
 
 def team_names
- ["game_hash[:home][:team_name]", "game_hash[:away][:team_name]"]
+ [game_hash[:home][:team_name], game_hash[:away][:team_name]]
 end
 
 binding.pry 
