@@ -180,4 +180,3 @@ def player_numbers(search_team)
   return numbers 
 end
 
-binding.pry
