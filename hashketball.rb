@@ -140,5 +140,3 @@ def num_points_scored(search_player)
     end
   end
 end
-
-binding.pry
