@@ -180,3 +180,12 @@ def player_numbers(search_team)
   return numbers 
 end
 
+def player_stats(search_player)
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |player|
+      if player[:player_name] == search_player
+        return player
+      end
+    end
+  end
+end
