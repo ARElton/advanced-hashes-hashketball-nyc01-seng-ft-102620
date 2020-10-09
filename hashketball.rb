@@ -1,3 +1,5 @@
+require "pry"
+
 # Write your code below game_hash
 def game_hash
   {
@@ -126,4 +128,20 @@ def game_hash
   }
 end
 
-# Write code here
+#####################################################################
+
+def player_helper
+game_hash[:home][:players] + game_hash[:away][:players]
+end
+
+def num_points_scored(player)
+  player_helper.each do |players|
+    players.each do |inner_key, inner_value|
+      if inner_value == player
+        return player_helper[:points]
+      end
+    end
+  end
+end
+
+binding.pry
