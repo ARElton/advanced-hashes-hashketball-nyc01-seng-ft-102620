@@ -188,6 +188,7 @@ def player_stats(search_player)
       end
     end
   end
+end
   
 def big_shoe_rebounds
   big_shoe = 0 
@@ -203,4 +204,4 @@ def big_shoe_rebounds
   return rebounds
 end
 
-binding.pry 
+ 
