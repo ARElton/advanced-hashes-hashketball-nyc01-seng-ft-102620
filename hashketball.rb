@@ -165,5 +165,11 @@ def team_names
 end
 
 def player_numbers(search_team)
-  
+  game_hash.each do |team, team_info|
+    if team == search_team
+      return [:number]
+    end
+  end
 end
+
+binding.pry
